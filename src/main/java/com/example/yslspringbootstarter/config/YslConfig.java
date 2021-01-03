@@ -13,6 +13,10 @@ public class YslConfig {
     @Autowired
     public YslProperties yslProperties;
 
+    /**
+     * 将YslService注入IOC容器之中
+     * @return
+     */
     @Bean
     public YslService getYslService(){
         return new YslService();
